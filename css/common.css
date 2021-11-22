@@ -92,7 +92,10 @@ button {
 
 .link {
   cursor: pointer;
+  
 }
+
+
 
 a {
   text-decoration: none;
@@ -146,6 +149,11 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .site-nav .link:hover,
@@ -175,6 +183,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .contact-nav .link:hover,
@@ -329,11 +342,16 @@ img {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .company-social-link:hover {
   background-color: #2196f3;
-  border-radius: 50%;
+
 }
   
 .footer-nav {

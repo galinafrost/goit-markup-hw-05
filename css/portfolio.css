@@ -31,6 +31,10 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .portfolio-buttons {
@@ -56,6 +60,12 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.box {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .box:hover,

@@ -128,6 +128,25 @@
 
 .container-portfolio .item {
   margin-right: 30px;
+  position: relative;
+}
+
+.item-text {
+  position: absolute;
+  bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-white-color);
+  width: 100%;
+  height: 70px;
+  
+  padding-top: 24px;
+  background: rgba(47, 48, 58, 0.8);
+
 }
 
 .container-portfolio .item:last-child {
@@ -199,6 +218,10 @@
 
 .social-icon {
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .button {
@@ -224,12 +247,17 @@
   height: 44px;
   justify-content: center;
   margin-right: 10px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 
 .team-name-link:hover {
   background-color: #2196f3;
-  border-radius: 50%;
+
 }
 
 .team-name-link:hover .social-icon {
@@ -271,6 +299,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition-property: border;
+    transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-list-link:last-child {
@@ -279,9 +311,17 @@
 
 .clients-list-item {
   fill: rgba(175, 177, 184, 1);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .clients-list-link a:hover {
   border: 1px solid #2196f3;
+  
 }
 
+.clients-list-item:hover {
+  fill: #2196f3;
+}
