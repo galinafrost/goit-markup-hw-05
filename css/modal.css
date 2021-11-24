@@ -11,6 +11,10 @@
 
 .modal {
   position: absolute;
+
+  position: relative;
+  display: block;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -40,4 +44,12 @@
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.formabox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
 }

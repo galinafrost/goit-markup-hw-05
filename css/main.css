@@ -275,6 +275,10 @@
   margin-right: 0;
 }
 
+.company-social {
+  margin-right: 93px;
+}
+
 /* clients */
 
 .section-client {
@@ -328,8 +332,9 @@
 
 .clients-list-link a:hover {
   border: 1px solid #2196f3;
+
 }
 
-.clients-list-item:hover {
+.clients-list-link a:hover .clients-list-item {
   fill: #2196f3;
 }
