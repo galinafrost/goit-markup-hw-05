@@ -412,6 +412,8 @@ img {
 
 .field-group {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-input {
@@ -421,9 +423,24 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 15px;
+  margin-right: 12px;
 }
 
 .contact-button {
   width: 200px;
   height: 50px;
 }
+
+.contact-button-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-telegram {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+

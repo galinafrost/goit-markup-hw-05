@@ -109,6 +109,10 @@
   /* position: absolute; */
 }
 
+.text-class {
+  color: rgba(117, 117, 117, 1);
+}
+
 .portfolio-item-txt {
   position: absolute;
 

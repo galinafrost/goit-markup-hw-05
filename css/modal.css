@@ -12,15 +12,16 @@
 .modal {
   position: absolute;
 
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 530px;
-  min-height: 580px;
+  width: 530px;
+  height: 580px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -46,10 +47,79 @@
   border-radius: 50%;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column
+}
+
+.modal-form-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(33, 33, 33, 1);
+
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
 .formabox {
-  position: absolute;
   display: flex;
   flex-direction: column;
-  top: 0;
-  left: 0;
+
+  padding: 41px;
 }
+
+.input {
+width: 448px;
+height: 44px;
+margin-bottom: 10px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+}
+
+.label {
+  margin-bottom: 4px;
+}
+
+textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+}
+
+.textarea-text {
+  width: 448px;
+  height: 120px;
+
+  padding: 16px, 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.label-textarea {
+  margin-right: 4px;
+}
+
+/* .privacy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.privacy-checkbox {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+  
+  .privacy-text {
+    margin-right: 5px;
+  }
+  .privacy-link {
+    color: var(--accent-cl);
+  } */
