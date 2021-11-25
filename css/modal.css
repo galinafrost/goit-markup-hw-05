@@ -5,8 +5,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: background-color 250ms ease-in-out;
+  opacity: 1;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
 
 .modal {
@@ -104,12 +104,43 @@ textarea {
   margin-right: 4px;
 }
 
-/* .privacy {
+.privacy {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
-.privacy-checkbox {
+
+.privacy-text {
+  margin-right: 5px;
+}
+
+.privacy-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.formabox-name {
+display: flex;
+flex-direction: column;
+position: relative;
+}
+
+.formabox-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 33px;
+  right: 422px;
+}
+
+input {
+  padding-left: 30px;
+}
+
+
+
+
+/* .privacy-checkbox {
   margin-right: 10px;
   width: 16px;
   height: 16px;
@@ -117,9 +148,7 @@ textarea {
   border-radius: 4px;
 }
   
-  .privacy-text {
-    margin-right: 5px;
-  }
+  
   .privacy-link {
     color: var(--accent-cl);
-  } */
+  } */ 

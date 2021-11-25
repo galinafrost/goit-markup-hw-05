@@ -26,13 +26,18 @@ body {
   
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 
-  transition: opacity 250ms ease-in-out;
+  /* transition: opacity 4000ms ease-in-out; */
 }
+
+/* .is-hidden {
+opacity: 1;
+transition: opacity 4000ms ease-in-out;
+} */
 
 .section {
   padding-bottom: 94px;
@@ -121,7 +126,6 @@ button {
 
 .link {
   cursor: pointer;
-  
 }
 
 
@@ -232,10 +236,14 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 
 .tel-icon {
   margin-right: 10px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .link-icons {
@@ -302,7 +310,10 @@ img {
   display: flex;
  flex-direction: column;
  margin-right: 70px;
+
 }
+
+
 
 .contact-foot .link {
   color: rgba(255, 255, 255, 0.6);
@@ -311,6 +322,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact-foot .link:hover,
